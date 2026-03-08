@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 const apiCandidates = [
   import.meta.env.VITE_API_BASE_URL,
+  "https://muhamadumar-plant-disease-api.hf.space",
   "http://127.0.0.1:8000",
   "http://localhost:8000",
 ]
@@ -75,7 +76,8 @@ export default function App() {
 
     setBackendStatus("offline");
     setBackendInfo(
-      "Backend is not reachable. Start FastAPI with: uvicorn main:app --reload --host 0.0.0.0 --port 8000"
+      `Backend is not reachable. Checked: ${apiCandidates.join(", ")}. ` +
+        "Set VITE_API_BASE_URL to your deployed backend URL and redeploy frontend."
     );
   }
 
