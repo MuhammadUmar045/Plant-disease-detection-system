@@ -383,7 +383,7 @@ export default function App() {
               </div>
               <div className="stat-brutal">
                 <p className="stat-label-brutal">TOTAL SCANS</p>
-                <p className="stat-value-brutal">2,547</p>
+                <p className="stat-value-brutal">30</p>
               </div>
             </div>
 
